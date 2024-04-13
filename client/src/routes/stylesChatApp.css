@@ -1,0 +1,57 @@
+#txtbox{
+    position: relative;
+    top:0px;
+    left: 25px;
+    
+    width: 1460px; /* Set width of the container */
+  height: 600px; /* Set height of the container */
+  border: 1px solid black; /* Optional: Add border for visual clarity */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+
+  background-color: red;
+}
+
+
+#txtbox1{
+    position: relative;
+    top:15px;
+
+    left: 25px;
+
+    width: 1460px; /* Set width of the container */
+    height: 50px;
+
+    border: 1px solid black;
+    padding: 10px;
+
+  background-color: blue;
+}
+
+#txtbox1 button:hover{
+    background-color: rgb(16, 218, 16);
+    border-color: green;
+    border: 1px solid transparent;
+}
+
+#btn_dwnld{
+    position: relative;
+    left: 100px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}
+#btn_send{
+    position: relative;
+    left: 100px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}
+#btn_upload{
+    position: relative;
+    left: 100px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}

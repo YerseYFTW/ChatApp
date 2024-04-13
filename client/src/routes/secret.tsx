@@ -40,7 +40,7 @@ const ChatApp: React.FC = () => {
   const fetchSecret = async () => {
       setLoading(true);
       try {
-        const secret = await BackendService.getSecret();
+        const secret = await BackendService.hello(name);
         setSecret(secret);
       } catch (error) {
         console.error(error);

@@ -1,23 +1,16 @@
 import { GenezioDeploy } from "@genezio/types";
-import fetch from "node-fetch";
 
 @GenezioDeploy()
 export class BackendService {
+  secret = "Capybaras are AWESOME! Shhh... don't tell the cats!";
+
   async hello(name) {
-    const ipLocation = await fetch("http://ip-api.com/json/")
-      .then((res) => res.json())
-      .catch(() => ({ status: "fail" }));
+    console.log(name);
+    return name;
+  }
 
-    if (ipLocation.status === "fail") {
-      return `Hello ${name}! Failed to get the server location :(`;
-    }
-
-    const formattedTime = new Date().toLocaleString("en-US", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-    });
-
-    return `Hello ${name}! This response was served from ${ipLocation.city}, ${ipLocation.country} (${ipLocation.lat}, ${ipLocation.lon}) at ${formattedTime}`;
+  async getSecret(user) {
+    console.log(user);
+    return secret;
   }
 }

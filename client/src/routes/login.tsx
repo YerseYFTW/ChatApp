@@ -17,7 +17,7 @@ const Login: React.FC = () => {
   
     try {
       await AuthService.getInstance().login(email, password);
-      navigate("/");
+      navigate("/chatapp");
     } catch (error: any) {
       console.log("Login Failed", error);
       alert("Login Failed");
