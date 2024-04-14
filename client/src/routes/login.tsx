@@ -26,9 +26,11 @@ const Login: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleLoginSubmit}>
-      <div>
-        <label htmlFor="email">Email:</label>
+    <div >
+    <form onSubmit={handleLoginSubmit} className="login-form" >
+      <p>Login Page</p>
+      <div >
+        <label htmlFor="email"><b>Email:</b> </label>
         <input
           type="email"
           id="email"
@@ -37,7 +39,7 @@ const Login: React.FC = () => {
         />
       </div>
       <div>
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password"><b>Password:</b> </label>
         <input
           type="password"
           id="password"
@@ -50,6 +52,7 @@ const Login: React.FC = () => {
       <button onClick={() => navigate('/signup')}>Create an account</button>
 
       </form>
+      </div>
   );
 };
 

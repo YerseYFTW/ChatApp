@@ -17,7 +17,7 @@ const ChatAppFinal: React.FC = () =>{
     return (
         <div className="form-container1">
             
-            <button id="centeredd1" onClick={tothekeys}>API Keys</button>
+            <button id="centeredd11" onClick={tothekeys}>API Keys</button>
             <button id="centeredd1" onClick={tothedocs}>API Documentation</button>
             
         </div>

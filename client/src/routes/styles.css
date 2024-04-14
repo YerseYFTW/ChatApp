@@ -5,11 +5,18 @@
     flex-direction: column;
 }
 .form-container1 {
+    border: 3px solid black;
+    width:200px;
+    left:42%;
+    position: relative;
+    border-radius: 20px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(102, 112, 100);
 }
 form {
     display: flex;
@@ -22,4 +29,76 @@ input {
 }
 button {
     cursor: pointer;
+}
+
+.login-form{
+    border: 3px solid black;
+    width: 25%;
+    position: relative;
+    left:36%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+.login-form p{
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.signup-form{
+    border: 3px solid black;
+    width: 25%;
+    position: relative;
+    left:36%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.signup-form p{
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-container1 p {
+    color: black;
+    background-color: white;
+    width:200px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form-container12{
+    color: black;
+    background-color: white;
+    position: relative;
+    left:23%;
+    width:850px;
+    height:auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.form-container12 p{
+    color: black;
+    background-color: white;
+    position: relative;
+    width:600px;
+    text-align: center;
+    
+}
+
+.form-container12 pre{
+    font-size: 15px;
 }
