@@ -55,3 +55,16 @@
     height: 40px;
     width: 40px;
 }
+
+#centeredd{
+    /*left: 400px;*/
+    background-color: blue;
+    display:flex;
+    align-items: right;
+}
+#centeredd1{
+    left: 300px;
+    background-color: red;
+    padding: 15px;
+    
+}

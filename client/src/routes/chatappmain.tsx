@@ -1,18 +1,29 @@
 import React from 'react'; //, { useEffect, useState }
-import ChatAppTextBox from './ChatAppTextBox';
-import ChatAppTextReader from './ChatAppTextReader';
+//import APIkeys from './APIkeys';
+import { useNavigate } from 'react-router-dom';
+//import ChatAppTextReader from './ChatAppTextReader';
 import './stylesChatApp.css';
 import "./styles.css";
 
 const ChatAppFinal: React.FC = () =>{
+    const navigate = useNavigate();
+
+    function tothekeys(){
+        navigate("/apikeys");
+    }
+    function tothedocs(){
+        navigate("/apidocs");
+    }
     return (
-        <div>
+        <div className="form-container1">
             
-            <ChatAppTextBox/>
-            <ChatAppTextReader/>
+            <button id="centeredd1" onClick={tothekeys}>API Keys</button>
+            <button id="centeredd1" onClick={tothedocs}>API Documentation</button>
             
         </div>
     );
 };
+//<ChatAppTextBox/>
+//<ChatAppTextReader/>
 
 export default ChatAppFinal;
